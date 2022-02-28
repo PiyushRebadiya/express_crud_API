@@ -1,0 +1,57 @@
+### GET ALL PRODUCT
+GET http://localhost:4000/api/products HTTP/1.1
+
+### GET ALL USER
+GET http://localhost:4000/api/login HTTP/1.1
+
+### SINGLE ITEM GET
+GET http://localhost:4000/api/products/6218a73d6a752b838880bf32 HTTP/1.1
+
+### SINGLE USER GET
+GET http://localhost:4000/api/login/6218cbf2c0307a49e9b0183e HTTP/1.1
+
+### ADD ITEM
+POST http://localhost:4000/api/products HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "maniyo",
+    "price": "102",
+    "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vector%2Fshop-store-flat-icon-vector-14270828&psig=AOvVaw2H98kMzib4oz-0M6ZTVvsL&ust=1645855508297000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCLC5m8SXmvYCFQAAAAAdAAAAABAD",
+    "details": "he is selfish man"
+}
+
+### ADD USER
+POST http://localhost:4000/api/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "manish",
+    "password": "112233"
+}
+
+### DELETE ITEM
+DELETE http://localhost:4000/api/products/6218a18464daedeec94da52b HTTP/1.1
+
+### DELETE USER
+DELETE http://localhost:4000/api/login/6218cbb9255f03284702fb39 HTTP/1.1
+
+### UPDATE ITEM
+PUT http://localhost:4000/api/products/6218a18564daedeec94da52d HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "gautam",
+    "price": "108",
+    "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vector%2Fshop-store-flat-icon-vector-14270828&psig=AOvVaw2H98kMzib4oz-0M6ZTVvsL&ust=1645855508297000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCLC5m8SXmvYCFQAAAAAdAAAAABAD",
+    "details": "clamsy person"
+}
+
+### UPDATE USER
+PUT http://localhost:4000/api/login/6218cce4312d72d3b72bcb6e HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "gautam",
+    "password": "332211"
+}
